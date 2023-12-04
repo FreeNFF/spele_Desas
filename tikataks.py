@@ -126,7 +126,7 @@ mansLogs.config(menu=galvenaIzvele)#pievieno galvenajam logam
 #Mazā izvēle
 opcijas=Menu(galvenaIzvele,tearoff=False)#mazā izvēle
 galvenaIzvele.add_cascade(label="Opcijas", menu=opcijas)#lejupkrītošais saraksts
-galvenaIzvele.add_command(label="Par programmu",command=infoLogs) # pievieno mazajai izvēlnei
+galvenaIzvele.add_command(label="Par programmu",command=infoLogs) # pievieno mazajai izvēlnei vēl vienu izvēlni
 
 
 #Komandas
