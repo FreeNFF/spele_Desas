@@ -31,7 +31,19 @@ def disableButtons(): #spēle beidzas, pogas izslēgtas
 
 ########################################################################################################
 
+def infoLogs():
+    jaunsLogs=Toplevel()
+    jaunsLogs.title('Info par programmu')
+    jaunsLogs.geometry("300x300")
+    apraksts=Label(jaunsLogs,text='Spēles noteikumi')
+    apraksts.grid(row=0,column=2)
+    return 
+
+
+########################################################################################################
+
 def reset():
+    global count
     count=0
     btn1.config(state=NORMAL)
     btn2.config(state=NORMAL)
@@ -110,9 +122,12 @@ btn9= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light 
 galvenaIzvele=Menu(mansLogs)#izveido galveno izvēli
 mansLogs.config(menu=galvenaIzvele)#pievieno galvenajam logam
 
+
 #Mazā izvēle
 opcijas=Menu(galvenaIzvele,tearoff=False)#mazā izvēle
 galvenaIzvele.add_cascade(label="Opcijas", menu=opcijas)#lejupkrītošais saraksts
+galvenaIzvele.add_command(label="Par programmu",command=infoLogs) # pievieno mazajai izvēlnei
+
 
 #Komandas
 opcijas.add_command(label="Jauna spēle", command=reset)
