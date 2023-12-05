@@ -34,11 +34,22 @@ def disableButtons(): #spēle beidzas, pogas izslēgtas
 def infoLogs():
     jaunsLogs=Toplevel()
     jaunsLogs.title('Info par programmu')
-    jaunsLogs.geometry("300x300")
-    apraksts=Label(jaunsLogs,text='Spēles noteikumi')
-    apraksts.grid(row=0,column=2)
+    jaunsLogs.geometry("900x300")
+    apraksts=Label(jaunsLogs,text='Spēles noteikumi', font='Helvica 20 bold ')#fonts, izmērs, stils
+    apraksts.grid(row=0,column=0)
+    apraksts=Label(jaunsLogs,text='', font='Helvica')#fonts, izmērs, stils
+    apraksts.grid(row=1,column=0)
+    apraksts=Label(jaunsLogs,text='1. Spēle tiek spēlēta uz režģa, kas ir 3 kvadrāti X 3 kvadrāti.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts.grid(row=2,column=0)
+    apraksts=Label(jaunsLogs,text='2. Jūs esat X, jūsu draugs ir O. Spēlētāji pēc kārtas liek savus simbolus tukšos laukumos.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts.grid(row=3,column=0)
+    apraksts=Label(jaunsLogs,text='Uzvar pirmais spēlētājs, kurš iegūst 3 savas atzīmes pēc kārtas (augšup, lejup, šķērsām vai pa diagonāli).', font='Helvica 14')#fonts, izmērs, stils
+    apraksts.grid(row=4,column=0)
+    apraksts=Label(jaunsLogs,text='Kad visi 9 laukumi ir aizpildīti, spēle ir beigusies.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts.grid(row=5,column=0)
+    apraksts=Label(jaunsLogs,text='Ja nevienam spēlētājam nav 3 atzīmes pēc kārtas, spēle beidzas ar neizšķirtu.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts.grid(row=6,column=0)
     return 
-
 
 ########################################################################################################
 
@@ -104,15 +115,15 @@ def checkWinner():#funkcija, kas nosaka uzvarētāju
 
 ################################################################################################################
 
-btn1= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn1))
-btn2= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn2))
-btn3= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn3))
-btn4= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn4))
-btn5= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn5))
-btn6= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn6))
-btn7= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn7))
-btn8= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24), bg="yellow", command=lambda:btnClick(btn8))
-btn9= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn9))
+btn1= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn1), bd=6)
+btn2= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn2), bd=6)
+btn3= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn3), bd=6)
+btn4= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn4), bd=6)
+btn5= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn5), bd=6)
+btn6= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="yellow", command=lambda:btnClick(btn6), bd=6)
+btn7= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn7), bd=6)
+btn8= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24), bg="yellow", command=lambda:btnClick(btn8), bd=6)
+btn9= Button(mansLogs, text="", width=6, height=3,font=('Helvica',24),bg="light yellow", command=lambda:btnClick(btn9), bd=6)
 
 
 
