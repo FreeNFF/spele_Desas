@@ -35,19 +35,20 @@ def infoLogs():
     jaunsLogs=Toplevel()
     jaunsLogs.title('Info par programmu')
     jaunsLogs.geometry("900x300")
-    apraksts=Label(jaunsLogs,text='Spēles noteikumi', font='Helvica 20 bold ')#fonts, izmērs, stils
+    jaunsLogs.configure(bg='#ffe9a1')
+    apraksts=Label(jaunsLogs,text='Spēles noteikumi', font='Helvica 20 bold ', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=0,column=0)
-    apraksts=Label(jaunsLogs,text='', font='Helvica')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='', font='Helvica', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=1,column=0)
-    apraksts=Label(jaunsLogs,text='1. Spēle tiek spēlēta uz režģa, kas ir 3 kvadrāti X 3 kvadrāti.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='1. Spēle tiek spēlēta uz režģa, kas ir 3 kvadrāti X 3 kvadrāti.', font='Helvica 14', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=2,column=0)
-    apraksts=Label(jaunsLogs,text='2. Jūs esat X, jūsu draugs ir O. Spēlētāji pēc kārtas liek savus simbolus tukšos laukumos.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='2. Jūs esat X, jūsu draugs ir O. Spēlētāji pēc kārtas liek savus simbolus tukšos laukumos.', font='Helvica 14', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=3,column=0)
-    apraksts=Label(jaunsLogs,text='Uzvar pirmais spēlētājs, kurš iegūst 3 savas atzīmes pēc kārtas (augšup, lejup, šķērsām vai pa diagonāli).', font='Helvica 14')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='Uzvar pirmais spēlētājs, kurš iegūst 3 savus simbolus pēc kārtas (augšup, lejup, šķērsām vai pa diagonāli).', font='Helvica 14', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=4,column=0)
-    apraksts=Label(jaunsLogs,text='Kad visi 9 laukumi ir aizpildīti, spēle ir beigusies.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='Kad visi 9 laukumi ir aizpildīti, spēle ir beigusies.', font='Helvica 14', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=5,column=0)
-    apraksts=Label(jaunsLogs,text='Ja nevienam spēlētājam nav 3 atzīmes pēc kārtas, spēle beidzas ar neizšķirtu.', font='Helvica 14')#fonts, izmērs, stils
+    apraksts=Label(jaunsLogs,text='Ja nevienam spēlētājam nav 3 simboli pēc kārtas, spēle beidzas ar neizšķirtu.', font='Helvica 14', bg='#ffe9a1')#fonts, izmērs, stils
     apraksts.grid(row=6,column=0)
     return 
 
