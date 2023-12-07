@@ -55,7 +55,8 @@ def infoLogs():
 ########################################################################################################
 
 def reset():
-    global count
+    global count, speletajsX
+    speletajsX=True
     count=0
     btn1.config(state=NORMAL)
     btn2.config(state=NORMAL)
